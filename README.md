@@ -212,7 +212,7 @@ The OpenROAD GUI is a powerful visualization, analysis, and debugging
 tool with a customizable Tcl interface. The below figures show GUI views for
 various flow stages including floorplanning, placement congestion,
 CTS and post-routed design.
----
+
 ## ⚙️ Step 1: Install Required Dependencies
 
 Update your package list and install the necessary tools:
@@ -317,7 +317,80 @@ make clean_all
 | Build fails | Missing dependencies | Rerun dependency installer |
 
 ---
+### PDK Support
 
+The OpenROAD application is PDK independent. However, it has been tested
+and validated with specific PDKs in the context of various flow
+controllers.
+
+OpenLane supports SkyWater 130nm and GlobalFoundries 180nm.
+
+OpenROAD-flow-scripts supports several public and private PDKs
+including:
+
+#### Open-Source PDKs
+
+-   `GF180` - 180nm
+-   `SKY130` - 130nm
+-   `Nangate45` - 45nm
+-   `ASAP7` - Predictive FinFET 7nm
+
+#### Proprietary PDKs
+
+These PDKS are supported in OpenROAD-flow-scripts only. They are used to
+test and calibrate OpenROAD against commercial platforms and ensure good
+QoR. The PDKs and platform-specific files for these kits cannot be
+provided due to NDA restrictions. However, if you are able to access
+these platforms independently, you can create the necessary
+platform-specific files yourself.
+
+-   `GF55` - 55nm
+-   `GF12` - 12nm
+-   `Intel22` - 22nm
+-   `Intel16` - 16nm
+-   `TSMC65` - 65nm
+
+
+## Run
+
+``` text
+openroad [-help] [-version] [-no_init] [-exit] [-gui]
+         [-threads count|max] [-log file_name] [-db file_name] cmd_file
+  -help              show help and exit
+  -version           show version and exit
+  -no_init           do not read .openroad init file
+  -threads count|max use count threads
+  -no_splash         do not show the license splash at startup
+  -exit              exit after reading cmd_file
+  -gui               start in gui mode
+  -python            start with python interpreter [limited to db operations]
+  -log <file_name>   write a log in <file_name>
+  -db <file_name>    open a .odb database at startup
+  cmd_file           source cmd_file
+```
+
+OpenROAD sources the Tcl command file `~/.openroad` unless the command
+line option `-no_init` is specified.
+
+OpenROAD then sources the command file `cmd_file` if it is specified on
+the command line. Unless the `-exit` command line flag is specified, it
+enters an interactive Tcl command interpreter.
+
+A list of the available tools/modules included in the OpenROAD app
+and their descriptions are available [here](docs/contrib/Logger.md#openroad-tool-list).
+
+## Git Quickstart
+OpenROAD uses Git for version control and contributions. 
+Get familiarised with a quickstart tutorial to contribution [here](docs/contrib/GitGuide.md).
+
+
+## Understanding Warning and Error Messages
+Seeing OpenROAD warnings or errors you do not understand? We have compiled a table of all messages
+and you may potentially find your answer [here](https://openroad.readthedocs.io/en/latest/user/MessagesFinal.html).
+
+## License
+
+BSD 3-Clause License. See [LICENSE](LICENSE) file.
 ## 📚 References
 
 - [OpenROAD GitHub Repository](https://github.com/The-OpenROAD-Project/OpenROAD)
