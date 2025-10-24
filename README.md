@@ -381,7 +381,7 @@ and their descriptions are available [here](docs/contrib/Logger.md#openroad-tool
 
 ## test run of Nandgate 45
 ```text
-
+harsh@harsh-VirtualBox:~/OpenROAD/test$ openroad -gui -log gcd_logfile.log gcd_nandgate45.tcl
 ```
 ## Git Quickstart
 OpenROAD uses Git for version control and contributions. 
