@@ -383,6 +383,12 @@ and their descriptions are available [here](docs/contrib/Logger.md#openroad-tool
 ```text
 harsh@harsh-VirtualBox:~/OpenROAD/test$ openroad -gui -log gcd_logfile.log gcd_nandgate45.tcl
 ```
+### 🧩 Output 
+
+<img width="1422" height="845" alt="Id vs Vds plot" src="https://github.com/CircuitCrafter07/Week-5/blob/main/Screenshot%20from%202025-10-24%2016-48-49.png" />
+<img width="1422" height="845" alt="Id vs Vds plot" src="" />
+<img width="1422" height="845" alt="Id vs Vds plot" src="https://github.com/CircuitCrafter07/Week-5/blob/main/Screenshot%20from%202025-10-24%2016-48-49.png" />
+<img width="1422" height="845" alt="Id vs Vds plot" src="https://github.com/CircuitCrafter07/Week-5/blob/main/Screenshot%20from%202025-10-24%2016-48-49.png" />
 ## Git Quickstart
 OpenROAD uses Git for version control and contributions. 
 Get familiarised with a quickstart tutorial to contribution [here](docs/contrib/GitGuide.md).
