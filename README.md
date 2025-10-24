@@ -1,14 +1,9 @@
+# RISC-V SoC Tapeout Program VSD 
+## 🗺️ OpenROAD Flow Setup and Floorplan + Placement
+
 # 🧩 OpenROAD Flow Installation Guide (Ubuntu)
 
 This guide provides a simple step-by-step process to install **OpenROAD Flow** on your Ubuntu system and run the test design `nand45`.
-
----
-
-## 🖥️ Supported Versions
-
-- Ubuntu **20.04** or **22.04 LTS**
-- Internet connection required
-- Recommended: 16 GB RAM, 4+ CPU cores
 
 ---
 # OpenROAD
