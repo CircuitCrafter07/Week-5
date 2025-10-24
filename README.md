@@ -397,5 +397,12 @@ BSD 3-Clause License. See [LICENSE](LICENSE) file.
 - [OpenROAD Documentation](https://openroad.readthedocs.io/en/latest/)
 
 ---
+## Understanding Warning and Error Messages
+Seeing OpenROAD warnings or errors you do not understand? We have compiled a table of all messages
+and you may potentially find your answer [here](https://openroad.readthedocs.io/en/latest/user/MessagesFinal.html).
+
+## License
+
+BSD 3-Clause License. See [LICENSE](LICENSE) file.
 
 ### ✅ Done! You have successfully installed OpenROAD Flow on Ubuntu.
