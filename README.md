@@ -382,7 +382,7 @@ and their descriptions are available [here](docs/contrib/Logger.md#openroad-tool
 ## test run of Nandgate 45
 ```text
 
-
+---
 ## Git Quickstart
 OpenROAD uses Git for version control and contributions. 
 Get familiarised with a quickstart tutorial to contribution [here](docs/contrib/GitGuide.md).
